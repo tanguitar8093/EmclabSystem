@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left:2em;
+    margin-right: 2em;
+}
+label{
+    float: left;
+    width: 10em;
+    margin-bottom:1em;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 15em;
+    magin-left: 0.5em;
+    margin-bottom:0.5em;
+}
+
+br{
+    clear: both;
+}
+#submit {
+    margin-left: 0.9em;
+}
+.datecolor{
+    color: white;
+}
+.back{
+
+ }
+div {
+    /*width: 800px;*/
+    /*height: 400px;*/
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin: -150px 0 0 -300px;
+}
+ hr{
+     border:none;
+     border-top:dashed 1px #CCC;
+     height:1px;
+     color:#FFFFFF;
+     margin: 0 6 0 6;
+ }
