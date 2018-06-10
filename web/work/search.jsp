@@ -180,7 +180,23 @@
                 out.print("<td>&nbsp;" + dateParament.getClientName() + "&nbsp;</td>");
                 out.print("<td>&nbsp;" + dateParament.getModeName() + "&nbsp;</td>");
                 out.print("<td>&nbsp;" + dateParament.getDateCase() + "&nbsp;</td>");
-                if (power ==1 || (accountcheck.equals(dateParament.getDateUser()))){
+                //預設為同姓名可更改
+//                if (power ==1 || (accountcheck.equals(dateParament.getDateUser()))){
+//                    out.print("<form action=\"DateListCheckServlet\" method=\"post\">");
+//                    out.print("<input type=\"hidden\"  name=\"searchId\" value=\""+dateParament.getId()+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"inputType\" value=\"SearchEdit\">");
+//                    out.print("<input type=\"hidden\"  name=\"whitchForm\" value=\""+whitchForm+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"readtestItem\" value=\""+readtestItem+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"readdate1\" value=\""+readdate1+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"readdate2\" value=\""+readdate2+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"readwhitchType\" value=\""+readwhitchType+"\">");
+//                    out.print("<input type=\"hidden\"  name=\"readsearchWord\" value=\""+readsearchWord+"\">");
+//                    out.print("<td><b>&nbsp;&nbsp;&nbsp;<input type=\"submit\" class=\"btn btn-outline-dark btn-sm\" value=\"編輯\"></b></td>");
+//                    out.print("</form>");
+//                }else {
+//                    out.print("<td>"+"權限不足"+"</td>");
+//                }
+                if (power ==1 ){
                     out.print("<form action=\"DateListCheckServlet\" method=\"post\">");
                     out.print("<input type=\"hidden\"  name=\"searchId\" value=\""+dateParament.getId()+"\">");
                     out.print("<input type=\"hidden\"  name=\"inputType\" value=\"SearchEdit\">");

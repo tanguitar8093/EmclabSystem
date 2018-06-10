@@ -91,7 +91,6 @@ public class EmailListServlet2 extends HttpServlet {
         String insertStm = String.format("INSERT INTO MitacEmcMember (unit,name,job,account,password,email,power) " +
                         "Values('%s','%s','%s','%s','%s','%s','%s')",
                 user2.getUnit(), user2.getName(), user2.getJob(), user2.getAccount(), user2.getPassword(), user2.getEmail(), user2.getPower());
-        System.out.println(insertStm);
         statement.executeUpdate(insertStm);
     }
 

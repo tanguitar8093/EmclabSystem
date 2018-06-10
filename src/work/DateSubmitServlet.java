@@ -107,26 +107,26 @@ public class DateSubmitServlet extends HttpServlet {
             DateParament dateParament = new DateParament(dateDay,dateUser,dateCase,dateYear,dateMonth,listDate,bookTime,unit,modeName,clientName,testItem2);
 
             //過濾管理者OR一般使用者
-//            if (TransPower !=1){
-//                request.setAttribute("inputType","normal");
-//            insertToDb(dateParament);
-//            }else {
-//                GMToDb(dateParament);
-//            }
-            GMToDb(dateParament);
+            if (TransPower !=1){
+                request.setAttribute("inputType","normal");
+            insertToDb(dateParament);
+            }else {
+                GMToDb(dateParament);
+            }
+
 
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        //申請完成訊息設定
-//        request.setAttribute("Message","場地申請完成，請等待審核!!");
-//        if (TransPower ==1){
-//            request.setAttribute("Message","場地預約成功!!");
-//        }
+//        申請完成訊息設定
+        request.setAttribute("Message","場地申請完成，請等待審核!!");
+        if (TransPower ==1){
+            request.setAttribute("Message","場地預約成功!!");
+        }
 
-        request.setAttribute("Message","場地預約成功!!");
+
         getServletContext().getRequestDispatcher("/work/MainServlet").forward(request, response);
     }
     //檢查日期大小

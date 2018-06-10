@@ -11,7 +11,6 @@ import java.util.List;
 @WebServlet("/work/LoginServlet")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("修成!");
         //step1
         //載入cookie seesion
         //autoin >>session,remember >>cookie

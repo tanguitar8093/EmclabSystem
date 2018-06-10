@@ -25,7 +25,6 @@ public class WorkListServlet extends HttpServlet {
         String power = (String) session.getAttribute("power");
         int TransPower= Integer.parseInt(power);
         request.setAttribute("power",TransPower);
-System.out.println(TransPower);
         if (TransPower !=3){
             if (TransPower !=1) {
                 request.setAttribute("Message", "只開放給測試工程師及管理員使用!!");
