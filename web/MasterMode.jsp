@@ -27,9 +27,10 @@
 <input type="button" value="  成員資料表管理  " class="btn btn-outline-dark" onclick="location.href='ManageServlet'"><br><br>
 <input type="button" value="  已成立表單管理  " class="btn btn-outline-dark" onclick="location.href='SearchServlet'"><br><br>
 <input type="button" value="  工作日參數設定  " class="btn btn-outline-dark" onclick="location.href='WorkDayServlet'"><br><br>
+    <input type="button" value="  匯出月場地報單  " class="btn btn-outline-dark" onclick="location.href='ExcelServlet'"><br><br>
 </TABLE>
 <hr><br>
-<input type="button" value="  回主選單  "  class="btn btn-outline-dark" onclick="location.href='MainServlet'">
+<input type="button" value="  回主選單  "  class="btn btn-outline-dark" onclick="l  ocation.href='MainServlet'">
 </div>
 </body>
 </html>

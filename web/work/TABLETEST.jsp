@@ -220,7 +220,7 @@
     %>
     </form>
     <form action="CheckStringServlet" method="post">
-        場地： <select name="testItem2">
+        &nbsp;&nbsp;&nbsp;場地： <select name="testItem2">
             <option value="S0-RE">S0-RE</option>
             <option value="S0-CE">S0-CE</option>
             <option value="S1">S1</option>
@@ -229,7 +229,7 @@
             <option value="S4">S4</option>
             <option value="966">966</option>
         </select>
-        &nbsp; <input type="submit" value="送出" class="btn btn-outline-dark btn-sm" ><br>
+        &nbsp; <input type="submit" value="送出" class="btn btn-outline-dark btn-sm" ><br><br>
     </form>&nbsp;&nbsp;
     <form action="CheckStringServlet" method="post">
         顯示：<input type="radio"name="showType" value="showname" checked>負責人</input>
