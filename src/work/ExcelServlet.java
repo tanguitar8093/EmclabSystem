@@ -68,9 +68,6 @@ public class ExcelServlet extends HttpServlet {
             Statement statement = collection.createStatement();
             ResultSet resultSet = null;
 
-
-
-
             resultSet = statement.executeQuery("SELECT * FROM DateShowList");
             List<DateParament> userList =new ArrayList<>();
             int i=0;
@@ -115,6 +112,7 @@ public class ExcelServlet extends HttpServlet {
                     }
                     cell = row.createCell(1);
                     cell.setCellValue(listDate[i-1]);
+
                     cell = row.createCell(2);
                     cell.setCellValue(bookTime[i-1]);
                     cell = row.createCell(3);
@@ -129,7 +127,7 @@ public class ExcelServlet extends HttpServlet {
 
             }
 
-
+            sheet.autoSizeColumn(1);
             ByteArrayOutputStream outByteStream = new ByteArrayOutputStream();
             wb.write(outByteStream);
 

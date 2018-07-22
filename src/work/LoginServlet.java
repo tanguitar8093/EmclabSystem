@@ -15,6 +15,7 @@ public class LoginServlet extends HttpServlet {
         //載入cookie seesion
         //autoin >>session,remember >>cookie
         HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(60*60*24);
         String autoIn = (String) session.getAttribute("autoIn");
         Cookie[] cookies = request.getCookies();
         if (cookies !=null){
@@ -107,7 +108,7 @@ public class LoginServlet extends HttpServlet {
 
     private Cookie getCookie(String cookiename, String remember) {
         Cookie cookie= new Cookie(cookiename,remember);
-        cookie.setMaxAge(60000*60*24);
+        cookie.setMaxAge(60000*60*24*7);
         cookie.setPath("/");
         return cookie;
     }
